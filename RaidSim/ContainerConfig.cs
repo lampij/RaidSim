@@ -1,4 +1,6 @@
-﻿using RaidSim.Application.Routines;
+﻿using RaidSim.Application.PlayerObjects;
+using RaidSim.Application.Routines;
+using RaidSim.Interface.PlayerObjects;
 using RaidSim.Interface.Routines;
 using System;
 using System.Collections.Generic;
@@ -16,7 +18,8 @@ namespace RaidSim
         {
             UnityContainer container = new UnityContainer();
 
-            container.RegisterType<IGameStart, GameStart>(new HierarchicalLifetimeManager());
+            container.RegisterType<IGameStart, GameStart>(new HierarchicalLifetimeManager())
+                .RegisterType<IPlayerFactory, PlayerFactory>(new HierarchicalLifetimeManager());
 
             return container;
         }

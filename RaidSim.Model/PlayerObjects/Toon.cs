@@ -1,11 +1,11 @@
-﻿using RaidSim.Model.Player.Internals;
+﻿using RaidSim.Model.PlayerObjects.Internals;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaidSim.Model.Player
+namespace RaidSim.Model.PlayerObjects
 {
     public class Toon
     {

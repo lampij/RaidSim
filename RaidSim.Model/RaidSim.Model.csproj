@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Player\PlayerCharacterInternals\Health.cs" />
-    <Compile Include="Player\Player.cs" />
-    <Compile Include="Player\PlayerCharacterInternals\Resource.cs" />
-    <Compile Include="Player\Toon.cs" />
+    <Compile Include="PlayerObjects\PlayerCharacterInternals\Health.cs" />
+    <Compile Include="PlayerObjects\Player.cs" />
+    <Compile Include="PlayerObjects\PlayerCharacterInternals\Resource.cs" />
+    <Compile Include="PlayerObjects\Toon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

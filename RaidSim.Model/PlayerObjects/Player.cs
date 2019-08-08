@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaidSim.Model.Player
+namespace RaidSim.Model.PlayerObjects
 {
     /// <summary>
     /// The player represents both the character being played, and the player themselves. 
