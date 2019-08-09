@@ -47,6 +47,7 @@
     <Compile Include="PlayerObjects\PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routines\GameStart.cs" />
+    <Compile Include="Utils\RandomNumberGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RaidSim.Interface\RaidSim.Interface.csproj">
