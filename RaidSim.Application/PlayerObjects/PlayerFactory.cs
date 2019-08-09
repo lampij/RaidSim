@@ -29,5 +29,15 @@ namespace RaidSim.Application.PlayerObjects
                 }
             });
         }
+
+        public async Task<List<Player>> CreateRandomPlayer(int NumberOfPlayers)
+        {
+            Player[] playersToGenerate = new Player[NumberOfPlayers];
+            for (int i = 0; i < NumberOfPlayers; i++)
+            {
+                playersToGenerate[i] = await this.CreateRandomPlayer();
+            }
+            return playersToGenerate.ToList();
+        }
     }
 }

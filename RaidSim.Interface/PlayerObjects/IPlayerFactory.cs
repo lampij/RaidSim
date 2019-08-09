@@ -10,5 +10,7 @@ namespace RaidSim.Interface.PlayerObjects
     public interface IPlayerFactory
     {
         Task<Player> CreateRandomPlayer();
+
+        Task<List<Player>> CreateRandomPlayer(int NumberOfPlayers);
     }
 }
