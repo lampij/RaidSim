@@ -15,6 +15,7 @@ namespace RaidSim.Model.PlayerObjects.Internals
         public Resource(int MaxResource)
         {
             this.Max = MaxResource;
+            this._Current = Max;
         }
         private int _Current;
 

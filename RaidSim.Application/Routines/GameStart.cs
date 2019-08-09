@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace RaidSim.Application.Routines
@@ -21,6 +22,8 @@ namespace RaidSim.Application.Routines
         public async Task StartGame()
         {
             Player[] players = await _playerFactory.CreateRandomPlayer(5);
+            Console.Write($"{JsonConvert.SerializeObject(players, Formatting.Indented)}");
+            Console.ReadKey();
         }
     }
 }

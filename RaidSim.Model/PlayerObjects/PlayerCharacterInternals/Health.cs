@@ -15,6 +15,7 @@ namespace RaidSim.Model.PlayerObjects.Internals
         public Health(int MaxHealth)
         {
             this.Max = MaxHealth;
+            this._Current = Max;
         }
 
         private int _Current;
