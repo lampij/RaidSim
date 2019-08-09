@@ -26,8 +26,9 @@ namespace RaidSim.Application.PlayerObjects
                     CharacterLevel = _randomNumberGenerator.GenerateRandomInteger(1, 10),
                     Health = new Health(_randomNumberGenerator.GenerateRandomInteger(75, 100)),
                     PrimaryResource = new Resource(_randomNumberGenerator.GenerateRandomInteger(100, 150))
-                }
-            });
+                },
+                PlayerSkillLevel = _randomNumberGenerator.GenerateRandomDouble(0, 10)
+            }); ;
         }
 
         public async Task<Player[]> CreateRandomPlayer(int NumberOfPlayers)

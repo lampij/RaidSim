@@ -21,7 +21,7 @@ namespace RaidSim.Model.PlayerObjects
         /// </summary>
         public Toon CharacterBeingPlayed { get; set; }
 
-        
+        public double PlayerSkillLevel { get; set; }
 
     }
 }

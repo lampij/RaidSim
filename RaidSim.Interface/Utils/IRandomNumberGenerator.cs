@@ -9,5 +9,7 @@ namespace RaidSim.Interface.Utils
     public interface IRandomNumberGenerator
     {
         int GenerateRandomInteger(int min, int max);
+
+        double GenerateRandomDouble(double min, double max);
     }
 }

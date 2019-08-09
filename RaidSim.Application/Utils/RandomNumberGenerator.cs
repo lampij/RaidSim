@@ -18,5 +18,10 @@ namespace RaidSim.Application.Utils
         {
             return _randGen.Next(min, max);
         }
+
+        public double GenerateRandomDouble(double min, double max)
+        {
+            return _randGen.NextDouble() * (max - min) + min; ;
+        }
     }
 }
