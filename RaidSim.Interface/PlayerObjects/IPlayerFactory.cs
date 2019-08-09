@@ -11,6 +11,6 @@ namespace RaidSim.Interface.PlayerObjects
     {
         Task<Player> CreateRandomPlayer();
 
-        Task<List<Player>> CreateRandomPlayer(int NumberOfPlayers);
+        Task<Player[]> CreateRandomPlayer(int NumberOfPlayers);
     }
 }

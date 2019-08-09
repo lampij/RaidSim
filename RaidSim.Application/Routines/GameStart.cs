@@ -20,11 +20,7 @@ namespace RaidSim.Application.Routines
 
         public async Task StartGame()
         {
-            Player[] players = new Player[5];
-            for (int i = 0; i < 5; i++)
-            {
-                players[i] = await _playerFactory.CreateRandomPlayer();
-            }
+            Player[] players = await _playerFactory.CreateRandomPlayer(5);
         }
     }
 }
